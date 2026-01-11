@@ -11,10 +11,54 @@
         <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
     </button>
+    <div class="lang-switcher">
+        <button id="lang-toggle">
+            <span data-lang-display="en">한국어</span>
+            <span data-lang-display="ko">English</span>
+        </button>
+    </div>
+
     <div class="container">
-        <h1>Lotto Number Generator</h1>
+        <h1>
+            <span data-lang-display="en">Lotto Number Generator</span>
+            <span data-lang-display="ko">로또 번호 생성기</span>
+        </h1>
         <div id="numbers" class="numbers-container"></div>
-        <button id="generate-btn">Generate Numbers</button>
+        <button id="generate-btn">
+            <span data-lang-display="en">Generate Numbers</span>
+            <span data-lang-display="ko">번호 생성</span>
+        </button>
+    </div>
+
+    <div class="contact-form-container">
+        <h2>
+            <span data-lang-display="en">Alliance Inquiry</span>
+            <span data-lang-display="ko">제휴 문의</span>
+        </h2>
+        <form action="https://formspree.io/f/xeeejdvo" method="POST">
+            <label for="name">
+                <span data-lang-display="en">Name:</span>
+                <span data-lang-display="ko">이름:</span>
+            </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">
+                <span data-lang-display="en">Email:</span>
+                <span data-lang-display="ko">이메일:</span>
+            </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">
+                <span data-lang-display="en">Message:</span>
+                <span data-lang-display="ko">메시지:</span>
+            </label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">
+                <span data-lang-display="en">Submit Inquiry</span>
+                <span data-lang-display="ko">문의하기</span>
+            </button>
+        </form>
     </div>
     <script src="main.js"></script>
 </body>
